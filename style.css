@@ -1,0 +1,193 @@
+@page {
+	size: A4;
+}
+
+@font-face {
+	font-family: 'comfortaa';
+	src: url('file:///D:/developpement/mon-cv-full-stack/portfolio-front/src/fonts/Comfortaa-Regular.ttf')
+		format('truetype');
+}
+@font-face {
+	font-family: 'ebrima';
+	src: url('./fonts/ebrima.ttf') format('truetype');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'ebrima', sans-serif;
+	font-size: 10pt;
+	font-weight: 100;
+	text-decoration: none;
+}
+
+a {
+	color: #ffffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	letter-spacing: 1.5mm;
+}
+
+h1 {
+	font-size: 36pt;
+}
+
+h2 {
+	font-size: 19pt;
+}
+
+h3 {
+	font-size: 16pt;
+}
+
+h4 {
+	font-size: 12pt;
+}
+
+.bold,
+h4 {
+	font-weight: 800;
+}
+
+li {
+	margin-left: 5mm;
+}
+
+.separator {
+	height: 1mm;
+	width: 13mm;
+	margin: 2mm 0 2mm;
+}
+
+nav .separator {
+	background-color: #ffffffff;
+}
+
+section.main .separator,
+header .separator {
+	background-color: #436d9bff;
+}
+
+.separator-long {
+	margin: 10mm 0;
+	width: auto;
+}
+
+body {
+	height: 297mm;
+	width: 210mm;
+	background-color: #e0e0e0ff;
+	color: #ffffffff;
+}
+
+header {
+	background: top 25% center/150%
+		url('file:///D:/documents/Images/DCIM/Camera/IMG_20200221_183445~2.jpg');
+	height: 80mm;
+	width: 210mm;
+}
+
+header > div {
+	background-color: #00000040;
+	backdrop-filter: blur(3px);
+	height: inherit;
+	width: inherit;
+}
+
+header h4 {
+	letter-spacing: 0.5mm;
+}
+
+#title {
+	display: flex;
+	height: inherit;
+	margin: auto 0 auto 72.5mm;
+	padding: auto;
+	text-align: center;
+}
+
+#title-content {
+	display: inline-block;
+	margin: auto;
+	padding: 5mm;
+	vertical-align: middle;
+}
+
+img#photo {
+	width: 72.5mm;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.icon-small {
+	width: 6mm;
+	vertical-align: middle;
+	filter: invert(1);
+}
+
+main {
+	display: flex;
+	height: calc(297mm - 80mm);
+	width: inherit;
+}
+
+nav {
+	display: inline-block;
+	background-color: #436d9bff;
+	width: calc(72.5mm - (4mm * 2));
+	padding: 4mm;
+}
+
+article:not(:first-child) {
+	margin-top: 5mm;
+}
+
+article {
+	width: auto;
+}
+
+#languages-names {
+	column-width: 50mm;
+}
+
+section.main {
+	background-color: #ffffffff;
+	color: #436d9bff;
+	width: calc(210mm - 72.5mm - (4mm * 2));
+	padding: 4mm;
+}
+
+section.main article {
+	width: calc(210mm - 72.5mm - (4mm * 2));
+}
+
+section.main article.detail {
+	margin-top: 0;
+}
+
+section.main .detail > div {
+	display: flex;
+	justify-content: space-between;
+}
+
+section.main .date {
+	width: 100mm;
+}
+
+section.main h4.date {
+	width: 100mm;
+	letter-spacing: 0.2mm;
+	font-weight: 100;
+}
+
+section.main p {
+	text-align: justify;
+	text-justify: distribute;
+}
