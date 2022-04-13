@@ -191,3 +191,8 @@ section.main p {
 	text-align: justify;
 	text-justify: distribute;
 }
+
+#mpmc h4.company {
+	color: red;
+	letter-spacing: 0.5mm;
+}
