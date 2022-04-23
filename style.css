@@ -4,8 +4,7 @@
 
 @font-face {
 	font-family: 'comfortaa';
-	src: url('file:///D:/developpement/mon-cv-full-stack/portfolio-front/src/fonts/Comfortaa-Regular.ttf')
-		format('truetype');
+	src: url('.fonts/Comfortaa-Regular.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'ebrima';
@@ -16,7 +15,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'ebrima', sans-serif;
-	font-size: 10pt;
+	font-size: 11pt;
 	font-weight: 100;
 	text-decoration: none;
 }
@@ -31,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-	letter-spacing: 1.5mm;
+	letter-spacing: 1.6mm;
 }
 
 h1 {
@@ -48,11 +47,20 @@ h3 {
 
 h4 {
 	font-size: 12pt;
+	letter-spacing: 1.1mm;
 }
 
-.bold,
+.light {
+	font-weight: 600 !important;
+}
+
+.bold {
+	font-weight: 600 !important;
+}
+
+.bolder,
 h4 {
-	font-weight: 800;
+	font-weight: 800 !important;
 }
 
 li {
@@ -75,7 +83,7 @@ header .separator {
 }
 
 .separator-long {
-	margin: 10mm 0;
+	margin: 5.5mm 0;
 	width: auto;
 }
 
@@ -86,15 +94,15 @@ body {
 	color: #ffffffff;
 }
 
+/* HEADER */
 header {
-	background: top 25% center/150%
-		url('file:///D:/documents/Images/DCIM/Camera/IMG_20200221_183445~2.jpg');
+	background: top 30% center/135% url('./img/background.jpg');
 	height: 80mm;
 	width: 210mm;
 }
 
 header > div {
-	background-color: #00000040;
+	background-color: #00000050;
 	backdrop-filter: blur(3px);
 	height: inherit;
 	width: inherit;
@@ -104,63 +112,96 @@ header h4 {
 	letter-spacing: 0.5mm;
 }
 
-#title {
-	display: flex;
-	height: inherit;
-	margin: auto 0 auto 72.5mm;
-	padding: auto;
-	text-align: center;
-}
-
 #title-content {
+	height: inherit;
+	margin: auto 0 auto 50.5mm;
+	text-align: center;
 	display: inline-block;
-	margin: auto;
-	padding: 5mm;
+	padding: 3mm 5mm 5mm;
 	vertical-align: middle;
 }
 
 img#photo {
-	width: 72.5mm;
+	width: 50mm;
 	position: absolute;
 	left: 0;
-	bottom: 0;
+	bottom: 25mm;
 }
 
 .icon-small {
 	width: 6mm;
 	vertical-align: middle;
 	filter: invert(1);
+	fill: #436d9bff !important;
 }
+
+#title {
+	height: 55mm;
+}
+
+#about {
+	background-color: #436d9b90;
+	backdrop-filter: blur(50px);
+	height: 19mm;
+	padding: 3mm 8mm;
+}
+
+#about p {
+	font-size: 12pt;
+	text-align: justify;
+}
+/* /HEADER */
 
 main {
 	display: flex;
-	height: calc(297mm - 80mm);
 	width: inherit;
+	height: calc(297mm - 80mm - 20mm);
+}
+
+nav {
+	width: calc(72.5mm - (4mm * 2));
 }
 
 nav {
 	display: inline-block;
 	background-color: #436d9bff;
-	width: calc(72.5mm - (4mm * 2));
 	padding: 4mm;
 }
 
 article:not(:first-child) {
-	margin-top: 5mm;
+	margin-top: 4mm;
 }
 
-article {
-	width: auto;
+.detail:not(:first-child) {
+	margin-top: 3mm;
+}
+
+#contact-informations ul {
+	list-style-type: none;
+	margin-left: -6mm;
 }
 
 #languages-names {
 	column-width: 50mm;
 }
 
+#languages td.language {
+	min-width: 20mm;
+}
+
+article {
+	width: auto;
+}
+
+/* SECTION */
+
+section.main {
+	width: calc(210mm - 72.5mm - (4mm * 2));
+}
+
 section.main {
 	background-color: #ffffffff;
 	color: #436d9bff;
-	width: calc(210mm - 72.5mm - (4mm * 2));
 	padding: 4mm;
 }
 
@@ -168,22 +209,13 @@ section.main article {
 	width: calc(210mm - 72.5mm - (4mm * 2));
 }
 
-section.main article.detail {
-	margin-top: 0;
-}
-
 section.main .detail > div {
 	display: flex;
 	justify-content: space-between;
 }
 
-section.main .date {
-	width: 100mm;
-}
-
-section.main h4.date {
-	width: 100mm;
-	letter-spacing: 0.2mm;
+section.main .date h4 {
+	letter-spacing: -0.1mm;
 	font-weight: 100;
 }
 
@@ -191,8 +223,50 @@ section.main p {
 	text-align: justify;
 	text-justify: distribute;
 }
-/* 
-#mpmc h4.company {
-	color: red;
-	letter-spacing: 0.5mm;
+/* /SECTION */
+
+.experience-header {
+	align-items: flex-end;
+}
+
+.company {
+	max-width: 70mm;
+}
+
+.date {
+	width: 22mm;
+	text-align: left;
+}
+
+.clients {
+	width: 107.5mm;
+	text-align: right;
+}
+
+.clients span {
+	font-weight: 600;
+}
+
+h4.company {
+	text-align: right;
+}
+
+/* FOOTER */
+footer {
+	height: calc(20mm- 0pt);
+	background-color: #ffffffff;
+	display: flex;
+	justify-content: space-between;
+	border-top: #436d9bff solid 1pt;
+}
+
+footer img {
+	display: inline;
+	max-height: calc(16mm - 1pt);
+	margin: 1mm 5mm;
+}
+
+/* #qr-codes img {
+	margin: 0mm 4mm !important;
 } */
+/* /FOOTER */
