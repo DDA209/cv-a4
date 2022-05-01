@@ -265,3 +265,9 @@ footer img {
 
 
 /* /FOOTER */
+
+@media print {
+	header {
+		background: top 30% center/135% url('./img/background-print.jpg');
+	}
+}
