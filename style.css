@@ -27,10 +27,10 @@ a {
 h1,
 h2,
 h3,
-h4,
+/* h4, */
 h5,
 h6 {
-	letter-spacing: 1.6mm;
+	letter-spacing: 1mm;
 }
 
 h1 {
@@ -47,7 +47,7 @@ h3 {
 
 h4 {
 	font-size: 12pt;
-	letter-spacing: 1.1mm;
+	/* letter-spacing: 0.2mm; */
 }
 
 .light {
@@ -64,7 +64,8 @@ h4 {
 }
 
 li {
-	margin-left: 5mm;
+	margin: 0.5mm 0 0.5mm 5mm;
+	/* margin-left: 5mm; */
 }
 
 .separator {
@@ -83,7 +84,7 @@ header .separator {
 }
 
 .separator-long {
-	margin: 5.5mm 0;
+	margin: 5mm 0;
 	width: auto;
 }
 
@@ -140,10 +141,12 @@ img#photo {
 }
 
 #about {
+	display: flex;
 	background-color: #436d9b90;
 	backdrop-filter: blur(50px);
-	height: 19mm;
-	padding: 3mm 8mm;
+	height: 25mm;
+	padding: 0 8mm;
+	align-items: center;
 }
 
 #about p {
@@ -155,25 +158,27 @@ img#photo {
 main {
 	display: flex;
 	width: inherit;
-	height: calc(297mm - 80mm - 20mm);
+	height: calc(297mm - 80mm);
 }
 
 nav {
 	width: calc(72.5mm - (4mm * 2));
-}
-
-nav {
 	display: inline-block;
 	background-color: #436d9bff;
 	padding: 4mm;
 }
 
-article:not(:first-child) {
-	margin-top: 4mm;
+nav article p {
+	margin-top: 3mm;
 }
 
+article:not(:first-child),
 .detail:not(:first-child) {
-	margin-top: 3mm;
+	margin-top: 6.5mm;
+}
+
+.detail.first-detail {
+	margin-top: 0 !important;
 }
 
 #contact-informations ul {
@@ -214,11 +219,6 @@ section.main .detail > div {
 	justify-content: space-between;
 }
 
-section.main .date h4 {
-	letter-spacing: -0.1mm;
-	font-weight: 100;
-}
-
 section.main p {
 	text-align: justify;
 	text-justify: distribute;
@@ -230,11 +230,11 @@ section.main p {
 }
 
 .company {
-	max-width: 70mm;
+	max-width: 77mm;
 }
 
 .date {
-	width: 22mm;
+	width: 25mm;
 	text-align: left;
 }
 
@@ -243,15 +243,15 @@ section.main p {
 	text-align: right;
 }
 
-.clients span {
-	font-weight: 600;
+.environnement {
+	margin-top: 1.75mm;
 }
 
 h4.company {
 	text-align: right;
 }
 
-/* FOOTER */
+/* FOOTER ¤/
 footer {
 	height: calc(20mm- 0pt);
 	background-color: #ffffffff;
@@ -266,7 +266,5 @@ footer img {
 	margin: 1mm 5mm;
 }
 
-/* #qr-codes img {
-	margin: 0mm 4mm !important;
-} */
+
 /* /FOOTER */
