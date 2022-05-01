@@ -27,7 +27,6 @@ a {
 h1,
 h2,
 h3,
-/* h4, */
 h5,
 h6 {
 	letter-spacing: 1mm;
@@ -47,7 +46,6 @@ h3 {
 
 h4 {
 	font-size: 12pt;
-	/* letter-spacing: 0.2mm; */
 }
 
 .light {
@@ -65,7 +63,6 @@ h4 {
 
 li {
 	margin: 0.5mm 0 0.5mm 5mm;
-	/* margin-left: 5mm; */
 }
 
 .separator {
